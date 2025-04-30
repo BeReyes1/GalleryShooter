@@ -7,6 +7,8 @@ class Bullet extends Phaser.GameObjects.Sprite {
     }
 
     update() {
+        //console.log("Active")
+        //logic in here 
         if (this.active) {
             this.y -= this.speed;
             if (this.y < -(this.displayHeight/2)) {
